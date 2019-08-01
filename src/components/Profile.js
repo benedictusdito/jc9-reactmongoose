@@ -22,7 +22,9 @@ class Profile extends Component {
         <div className="container mt-5">
           <Jumbotron>
             <img
-              src={`http://localhost:2019/users/${this.props.data_id}/avatar/`}
+              src={`https://benmongoose.herokuapp.com/users/${
+                this.props.data_id
+              }/avatar/`}
               alt="Please choose your avatar"
               key={new Date()}
             />

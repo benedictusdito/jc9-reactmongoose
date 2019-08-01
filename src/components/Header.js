@@ -27,6 +27,10 @@ class Header extends Component {
     }));
   };
 
+  onButtonClick = () => {
+    this.props.onLogout();
+  };
+
   render() {
     // Jika belum login
     if (!this.props.id) {
@@ -88,7 +92,7 @@ class Header extends Component {
                   </Link>
                   <DropdownItem divider />
                   <Button
-                    onClick={this.props.onLogout}
+                    onClick={this.onButtonClick}
                     className="dropdown-item"
                   >
                     Log out
